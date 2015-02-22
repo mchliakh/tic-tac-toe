@@ -1,6 +1,6 @@
-# TicTacToeMchliakh
+# Tic-tac-toe
 
-TODO: Write a gem description
+A Tic-tac-toe game that never loses
 
 ## Installation
 
