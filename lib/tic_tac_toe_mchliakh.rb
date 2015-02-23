@@ -8,6 +8,8 @@ require 'tic_tac_toe_mchliakh/players/computer'
 
 module TicTacToeMchliakh
   def self.move(square, saved_board=nil)
+    square = square.to_i
+
     board = Board.new(saved_board)
     board.square(square).take(1)
 
