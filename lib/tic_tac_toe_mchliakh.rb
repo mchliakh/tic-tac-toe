@@ -1,4 +1,4 @@
-require "tic_tac_toe_mchliakh/version"
+require 'tic_tac_toe_mchliakh/board/square'
 
 module TicTacToeMchliakh
   # Your code goes here...
