@@ -1,6 +1,6 @@
 # Tic-tac-toe
 
-A Tic-tac-toe game that never loses
+A Tic-tac-toe game that never loses.
 
 ## Installation
 
@@ -20,9 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class MovesController < ActionController::Base
+  def make
+    game = if params[:game_id]
+      Game.new
+    else
+      Game.find(params[:game_id])
+    end
 
-## Contributing
+    render json: TicTacToeMchliakh.move(params[:square], game.board)
+  end
+end
+```
 
 1. Fork it ( https://github.com/[my-github-username]/tic_tac_toe_mchliakh/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
