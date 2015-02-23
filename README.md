@@ -1,6 +1,6 @@
 # Tic-tac-toe
 
-A Tic-tac-toe game that never loses.
+A Tic-tac-toe game that never loses. See it in action [here](http://tic-tac-toe-mchliakh.herokuapp.com/).
 
 ## Installation
 
@@ -29,7 +29,7 @@ class GamesController < ApplicationController
   def move
     game = Game.find(params[:id])
 
-    result = TicTacToe.move(square, game.board)
+    result = TicTacToe.move(params[:square], game.board)
 
     if result[:board]
       game.update_attributes(board: result[:board])
