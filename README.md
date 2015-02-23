@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-class MovesController < ActionController::Base
+class MovesController < ApplicationController
   def make
     game = if params[:game_id]
       Game.new

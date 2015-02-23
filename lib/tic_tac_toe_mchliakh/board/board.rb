@@ -15,7 +15,7 @@ module TicTacToeMchliakh
     end
 
     def square(number)
-      unless (1..9).include?(number)
+      unless (1..9).include?(number.to_i)
         raise RangeError, 'Choose a number between 1 and 9'
       end
 
