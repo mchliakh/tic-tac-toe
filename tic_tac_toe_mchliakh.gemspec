@@ -5,7 +5,7 @@ require 'tic_tac_toe_mchliakh/version'
 
 Gem::Specification.new do |s|
   s.name          = 'tic_tac_toe_mchliakh'
-  s.version       = TicTacToeMchliakh::VERSION
+  s.version       = TicTacToe::VERSION
   s.authors       = ['Mikhail Chliakhovski']
   s.email         = ['mchliakh.dev@gmail.com']
   s.summary       = 'Tic-tac-toe'

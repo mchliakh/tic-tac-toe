@@ -1,4 +1,4 @@
-module TicTacToeMchliakh
+module TicTacToe
   class IllegalMoveError < StandardError; end
 
   class Square

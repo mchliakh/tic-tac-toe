@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TicTacToeMchliakh
+module TicTacToe
   describe Squares do
     before do
       @squares = Squares.new

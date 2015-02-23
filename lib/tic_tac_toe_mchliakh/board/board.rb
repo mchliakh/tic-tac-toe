@@ -1,4 +1,4 @@
-module TicTacToeMchliakh
+module TicTacToe
   class Board
     attr_reader :squares, :lines, :winner
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TicTacToeMchliakh
+module TicTacToe
   describe Square do
     before do
       @board = double()

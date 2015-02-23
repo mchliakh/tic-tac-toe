@@ -1,4 +1,4 @@
-module TicTacToeMchliakh
+module TicTacToe
   class Lines < Array
     def can_win(player)
       select {|l| l.can_win?(player) }

@@ -29,7 +29,7 @@ class GamesController < ApplicationController
   def move
     game = Game.find(params[:id])
 
-    result = TicTacToeMchliakh.move(square, game.board)
+    result = TicTacToe.move(square, game.board)
 
     if result[:board]
       game.update_attributes(board: result[:board])

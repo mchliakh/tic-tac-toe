@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TicTacToeMchliakh
+module TicTacToe
   describe Board do
     before do
       @board = Board.new

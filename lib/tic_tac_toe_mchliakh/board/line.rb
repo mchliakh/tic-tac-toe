@@ -1,4 +1,4 @@
-module TicTacToeMchliakh
+module TicTacToe
   class Line
     attr_reader :squares
 

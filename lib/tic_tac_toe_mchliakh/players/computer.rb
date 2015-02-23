@@ -1,4 +1,4 @@
-module TicTacToeMchliakh
+module TicTacToe
   class Computer < Player
     def next_move
       line = any_winning_line || any_losing_line

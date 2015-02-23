@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TicTacToeMchliakh
+module TicTacToe
   describe Lines do
     before do
       @board = Board.new([

@@ -1,3 +1,3 @@
-module TicTacToeMchliakh
-  VERSION = '0.1.5'
+module TicTacToe
+  VERSION = '0.1.6'
 end

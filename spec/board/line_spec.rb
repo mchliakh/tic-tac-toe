@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module TicTacToeMchliakh
+module TicTacToe
   describe Line do
     before do
       @square = Square.new(nil, 0, 123)

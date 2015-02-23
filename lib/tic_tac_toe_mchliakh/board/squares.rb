@@ -1,4 +1,4 @@
-module TicTacToeMchliakh
+module TicTacToe
   class Squares < Array
     def empty
       select(&:empty?)

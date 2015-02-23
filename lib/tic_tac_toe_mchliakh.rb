@@ -6,7 +6,7 @@ require 'tic_tac_toe_mchliakh/board/board'
 require 'tic_tac_toe_mchliakh/players/player'
 require 'tic_tac_toe_mchliakh/players/computer'
 
-module TicTacToeMchliakh
+module TicTacToe
   def self.move(square, saved_board=nil)
     square = square.to_i
     saved_board.map! {|s| s.to_i if s } if saved_board
