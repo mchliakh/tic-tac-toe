@@ -10,6 +10,10 @@ module TicTacToeMchliakh
       expect(@board.square(1).number).to eq(1)
     end
 
+    it 'accepts string input' do
+      expect(@board.square(' 1').number).to eq(1)
+    end
+
     it 'loads itself' do
       saved = Board.new(Array.new(9, 123))
       expect(saved.squares).to be_all_taken
