@@ -21,15 +21,21 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-class MovesController < ApplicationController
-  def make
-    game = if params[:game_id]
-      Game.new
-    else
-      Game.find(params[:game_id])
+class GamesController < ApplicationController
+  def new
+    render json: Game.create.id
+  end
+
+  def move
+    game = Game.find(params[:id])
+
+    result = TicTacToeMchliakh.move(square, game.board)
+
+    if result[:board]
+      game.update_attributes(board: result[:board])
     end
 
-    render json: TicTacToeMchliakh.move(params[:square], game.board)
+    render json: result
   end
 end
 ```

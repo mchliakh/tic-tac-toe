@@ -6,7 +6,7 @@ module TicTacToeMchliakh
       if line
         line.squares.empty.sample
       else
-        forks.sample || sticky_situation || @board.squares.empty.max_by(&:line_count)
+        fork_squares.sample || fork_safe_square || @board.squares.empty.max_by(&:line_count)
       end
     end
 
@@ -20,15 +20,11 @@ module TicTacToeMchliakh
       @board.lines.can_lose(@number).sample
     end
 
-    def forks
+    def fork_squares
       @board.lines.squares_that_can_fork(@number).empty
     end
 
-    def opponent_forks
-      @board.lines.squares_that_can_be_forked(@number).empty
-    end
-
-    def sticky_situation
+    def fork_safe_square
       _opponent_forks = opponent_forks
 
       if opponent_forks.size > 1
@@ -39,6 +35,10 @@ module TicTacToeMchliakh
       else
         opponent_forks.first
       end
+    end
+
+    def opponent_forks
+      @board.lines.squares_that_can_be_forked(@number).empty
     end
   end
 end
