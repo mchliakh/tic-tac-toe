@@ -9,7 +9,7 @@ module TicTacToeMchliakh
       end
     end
 
-    it 'finds the empty squares' do
+    it 'finds empty squares' do
       expect(@squares.empty.count).to be(1)
     end
 

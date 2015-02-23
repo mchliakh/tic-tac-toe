@@ -44,12 +44,12 @@ module TicTacToeMchliakh
       }.to raise_error(IllegalMoveError)
     end
 
-    it 'knows if taken by player' do
+    it 'knows when taken by player' do
       @square.take(123)
       expect(@square.taken_by?(123)).to be(true)
     end
 
-    it 'knows if taken by opponent' do
+    it 'knows when taken by opponent' do
       @square.take(321)
       expect(@square.taken_by_opponent?(123)).to be(true)
     end
